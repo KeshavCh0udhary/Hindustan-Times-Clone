@@ -1,0 +1,23 @@
+#container{
+  display: flex;
+  gap:30px;
+  margin: auto;
+
+}
+
+#content_middle{
+    text-align: center;
+    width:40%;
+}
+#content_left{
+    width:20%;
+    
+}
+#content_left>div{
+    border-bottom: 1px solid black;
+}
+.newsImg{
+    width:500px;
+    height:400px;
+
+}
