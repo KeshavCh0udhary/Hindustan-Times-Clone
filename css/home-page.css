@@ -1,0 +1,67 @@
+*{
+    padding: 00px;
+    margin: 00px;
+    box-sizing: border-box;
+}
+h1{
+    color: rgb(164, 96, 96);
+}
+h2{
+    text-align: center;
+}
+.secNev{
+    border: 1px solid red;
+    width: 90%;
+  margin: auto;
+  display: flex;
+  padding: 20px;
+  margin: 10px;
+
+}
+li{
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    /* border: 1px solid black; */
+    padding: 10px;
+    list-style: none;
+    
+    margin: 5px;
+    
+    
+    
+}
+a:hover{
+    
+    border: 1px solid rgb(241, 15, 166);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#quiz::before{
+
+        content: "";
+        position: absolute;
+        right: 16px;
+        top: 4px;
+        height: 15px;
+        width: 32px;
+        background: url("https://image.shutterstock.com/z/stock-vector-new-product-sticker-icon-1223701150.jpg") no-repeat 0 0;
+}
+
+/* #morenev::before{
+    content: "";
+    display: block;
+    height: 5px;
+    width: 5px;
+    border-style: solid;
+    transform: rotate(45deg);
+    position: absolute;
+} */
+
+
