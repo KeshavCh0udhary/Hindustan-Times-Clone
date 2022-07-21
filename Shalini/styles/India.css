@@ -255,7 +255,7 @@ hr {
     background-color: white;
     margin-bottom: 15px;
 }
-/* ....................................................Photos-Div CSS.................................................. */
+
 #photos_div {
     padding: 20px;
     height: auto;
@@ -299,7 +299,7 @@ hr {
     border-radius: 5px;
 }
 
-/* ..............................................Shop-Now-Div CSS................................... */
+
 #shopping {
     padding: 20px;
     height: auto;
@@ -379,4 +379,25 @@ button {
 hr {
     background-color: rgb(217, 217, 217);
     height: none;
+}
+
+
+.detailzz_div {
+    margin: auto;
+    width: 95%;
+    padding: 20px;
+}
+
+.detailzz_div img {
+    width: 100%;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.detailzz_div iframe {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
