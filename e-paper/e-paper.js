@@ -2,7 +2,7 @@ let ENews = [
     "https://epsfs.hindustantimes.com/HT/2022/07/21/HT_DELH/HT_DELH/5_02/9543e2d1_02_mr.jpg", "https://epsfs.hindustantimes.com/HT/2022/07/21/HT_DELH/HT_DELH/5_03/a5d1eccf_03_mr.jpg", "https://epsfs.hindustantimes.com/HT/2019/08/02/HT_BRU/HT_BRU/5_01/b48a540e_01_mr.jpg","https://epsfs.hindustantimes.com/HT/2022/07/21/HT_DELH/HT_DELH/5_01/5094df6a_01_mr.jpg","https://epsfs.hindustantimes.com/HT/2022/07/21/HT_DELH/HT_DELH/1_04/715bd271_04_mr.jpg"
 ];
 let Epaper = document.getElementById("Epaper");
-Epaper.src = ENews[0];
+Epaper.src = ENews[3];
 
 let i = 0;
 let Interval;

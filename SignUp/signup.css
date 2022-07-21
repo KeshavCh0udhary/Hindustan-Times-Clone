@@ -14,7 +14,9 @@ h1 {
   font-weight: bolder;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+#LoGoo:hover{
+cursor: pointer;
+}
 #Container {
   width: 28%;
   margin: auto;
@@ -207,7 +209,7 @@ h1 {
   }
 }
 
-.invalid-feedback,
+/* .invalid-feedback,
 .empty-feedback {
   display: none;
 }
@@ -223,4 +225,35 @@ h1 {
 .is-invalid,
 .was-validated :invalid {
   border-color: #dc3545;
+} */
+
+a.icap {
+  background: url(https://images.livemint.com/sso/appleid_iconlogo.png) no-repeat 138px center #000;
+  border-radius: 2px;
+  padding-left: 170px;
+  line-height: 44px;
+  display: block;
+  margin: 0 0 16px;
+  width: 100%;
+  height: 44px;
+  color: #fff !important;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  background-size: 21px 21px;
+}
+
+a.ictc {
+  background: url(https://images.livemint.com/dev/ico_tc.svg) no-repeat 138px center #0087FE;
+  border-radius: 2px;
+  padding-left: 170px;
+  line-height: 44px;
+  display: block;
+  margin: 0 0 16px;
+  width: 100%;
+  height: 44px;
+  color: #fff !important;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
 }

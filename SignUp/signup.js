@@ -59,7 +59,9 @@ telInput.blur(function () {
 
 telInput.on("keyup change", reset);
 
-
+document.getElementById("LoGoo").addEventListener("click",()=>{
+window.location.href = "../ComponentNav/Comp.html";
+})
 
 
 
