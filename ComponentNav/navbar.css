@@ -1,0 +1,470 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+}
+
+#header {
+    background-color: #011e29;
+    transition: none;
+}
+
+#header .container {
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.container {
+    display: -webkit-flex;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+}
+
+#header .logo {
+    width: 383px;
+    margin: 0 auto;
+}
+
+#header .logo img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    transition: all 0.2s ease;
+}
+
+#header .exploreSearch {
+    display: -webkit-flex;
+}
+
+#header .btnExplore {
+    display: -webkit-flex;
+    align-items: center;
+    height: 20px;
+    cursor: pointer;
+}
+
+#header .btnExplore .navIco {
+    background-position: -33px -662px;
+    height: 12px;
+    width: 16px;
+    background-image: url(https://www.hindustantimes.com/static-content/1y/2021/ht-sprite-3.svg);
+}
+
+#header .btnExplore strong {
+    margin-left: 5px;
+    margin-right: 10px;
+    color: #f6f6f6;
+    font-size: 14px;
+}
+
+.searchLink a:before {
+    content: "";
+    background-position: -33px -615px;
+    height: 18px;
+    width: 15px;
+    margin-right: 5px;
+    background-image: url(https://www.hindustantimes.com/static-content/1y/2021/ht-sprite-3.svg);
+}
+
+.searchLink a {
+    padding: 3px 10px;
+    color: #f6f6f6;
+    font-weight: 700;
+    display: -webkit-flex;
+}
+
+a {
+    font-size: 14px;
+}
+
+#header .date-weather .hDate:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 0;
+    height: 12px;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#header .date-weather {
+    align-items: center;
+    padding-top: 10px;
+    min-height: 33px;
+    color: #fff;
+    display: flex;
+    font-size: 14px;
+}
+
+#header .date-weather>div {
+    padding: 0 6px;
+    line-height: 20px;
+}
+
+#header .date-weather>div:first-child {
+    padding-left: 0;
+}
+
+#header .date-weather .hWeather {
+    margin-top: -5px;
+}
+
+#header .rgtLinks {
+    margin-left: auto;
+}
+
+#header .rgtLinks .links {
+    display: flex;
+}
+
+#header .rgtLinks .gamezop {
+    text-align: center;
+    position: relative;
+}
+
+#header .rgtLinks .gamezop a {
+    display: -webkit-flex;
+    padding: 3px 10px;
+    color: #f6f6f6;
+    font-weight: 700;
+}
+
+#header .rgtLinks .gamezop a:before {
+    background-image: url(https://www.hindustantimes.com/static-content/1y/2021/ht-sprite-3.svg);
+    content: "";
+    margin-right: 5px;
+    background-position: -28px -521px;
+    height: 17px;
+    width: 25px;
+}
+
+#header .rgtLinks .epaper a {
+    display: -webkit-flex;
+    padding: 3px 10px;
+    color: #f6f6f6;
+    font-weight: 700;
+}
+
+#header .rgtLinks .epaper a:before {
+    background-image: url(https://www.hindustantimes.com/static-content/1y/2021/ht-sprite-3.svg);
+    margin-right: 5px;
+    content: "";
+    background-position: -31px -567px;
+    height: 19px;
+    width: 19px;
+}
+
+#header .rgtLinks .login .sign-in {
+
+    font-size: 14px;
+    padding: 3px 15px;
+}
+
+#header .signin .login .sign-in {
+    cursor: pointer;
+    display: -webkit-flex;
+    color: #f6f6f6;
+    font-weight: 700;
+}
+
+#header .rgtLinks .login .sign-in:before {
+    margin-right: 4px;
+}
+
+#header .signin .login .sign-in:before {
+    background-image: url(https://www.hindustantimes.com/static-content/1y/2021/ht-sprite-3.svg);
+    content: "";
+    background-position: -31px -473px;
+    height: 20px;
+    width: 18px;
+}
+
+.hdrSubscribe {
+    display: flex;
+    margin-left: 50px;
+}
+
+.headSpanTxt {
+    color: #fff;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.subcBtn>a {
+    padding: 2px 6px;
+    background-color: #fff;
+    color: #011e29;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    height: 19px;
+    line-height: 19px;
+}
+
+.links {
+    margin-bottom: 18px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #001e29;
+    overflow-x: hidden;
+    transition: all 0.4s ease;
+    padding-top: 60px;
+    font-family: "Lato", sans-serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.673) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    right: 5px;
+    font-size: 36px;
+    width: 16px;
+    height: 26px;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+}
+
+.sidenav-heaer {
+    padding: 10px 10px 0;
+    margin-top: -50px;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9px;
+}
+
+.sidenav-heaer .navlogo {
+    width: 38px;
+    height: 38px;
+    margin-left: 10px;
+    background-position: -40px -1680px;
+    background-size: 120px;
+    background-image: url(https://www.hindustantimes.com/static-content/1y/2021/ht-sprite-3.svg);
+}
+
+.sideNavWather {
+    color: #fff;
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.sideNavWather .date {
+    color: #a6a6a6;
+}
+
+.sideNavWather .weather:after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 9px;
+    background: url(https://www.hindustantimes.com/res/images/weather-icon1.svg) no-repeat 0 0;
+    margin-left: 3px;
+}
+
+.sidenav-heaer .closebtn {
+    position: relative;
+    width: 16px;
+    height: 26px;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+}
+
+.scrollMenu {
+    overflow-y: scroll;
+    height: calc(100% - 76px);
+    box-sizing: border-box;
+    background-color: #001e29;
+    border-top: solid 1px #00364a;
+    margin-top: 14px;
+}
+
+.sidenav ::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidenav ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+}
+
+.sidenav ::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.nav-sec ul li {
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    font-weight: 700;
+}
+
+.nav-sec ul li a {
+    line-height: 42px;
+    padding: 0 20px;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+}
+
+.nav-sec ul li.collapse span {
+    margin-left: 8px;
+    margin-top: -5px;
+    content: "";
+    display: block;
+    height: 8px;
+    width: 8px;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 0px 2px 2px 0px;
+    transform: rotate(45deg);
+}
+
+.nav-sec ul li div {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 16px;
+}
+
+.nav-sec ul li div a {
+    display: inline;
+    max-width: max-content;
+    padding: 0 0;
+}
+
+.nav-sec ul.nav-expanded {
+    background-color: #002634;
+}
+
+.nav-sec ul.nav-expanded li.menuhead p {
+    color: #447c91;
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    padding: 0 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.nav-sec ul.nav-expanded li {
+    font-weight: normal;
+}
+
+.nav-sec .nav-footer {
+    padding: 12px 20px 24px;
+    margin-top: 1px;
+    color: #fff;
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+}
+
+.footerLogin {
+    padding: 20px;
+    min-height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    background: #01171f;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    position: sticky;
+    bottom: 0;
+    z-index: 99999;
+}
+
+.shareArticle .shareIcons {
+    display: -webkit-flex;
+}
+
+.shareArticle .shareIcons a.fb:after {
+    background-position: -29px -1685px;
+    height: 23px;
+    width: 23px;
+}
+
+.shareArticle .shareIcons a.tw:after {
+    background-position: -29px -1737px;
+    height: 23px;
+    width: 23px;
+}
+
+.shareArticle .shareIcons a.ln:after {
+    background-position: -29px -1737px;
+    height: 23px;
+    width: 23px;
+}
+
+.shareArticle .shareIcons a:after {
+    content: "";
+    display: inline-block;
+    background-image: url(https://www.hindustantimes.com/static-content/1y/2021/ht-sprite-3.svg);
+}
+
+.shareArticle .shareIcons a:after {
+    content: "";
+    display: inline-block;
+    background-image: url(https://www.hindustantimes.com/static-content/1y/2021/ht-sprite-3.svg);
+}
+
+.shareArticle .shareIcons a:after {
+    content: "";
+    display: inline-block;
+    background-image: url(https://www.hindustantimes.com/static-content/1y/2021/ht-sprite-3.svg);
+}
+
+
+#MiNi {
+    box-shadow: 0 3px 6px 0 rgb(29, 94, 104);
+}
+
+#MiNi>div {
+    display: -webkit-flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#MiNi>div a {
+    font-size: 17px;
+    padding: 8px;
+    border: 2px solid transparent;
+    color: black;
+    font-weight: 700;
+}
+
+#MiNi>div a:hover {
+    color: rgb(35, 207, 207);
+    border-bottom: 2px solid rgb(35, 207, 207);
+}
