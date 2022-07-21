@@ -135,6 +135,7 @@
    color: gray;
 }
 
+
 #icons_div {
     display: flex;
     justify-content: space-around;
@@ -158,6 +159,7 @@
     margin-top: 10px;
     border-radius: 15px;  
     font-size: small;
+    cursor: pointer;
     
 }
 
@@ -193,6 +195,7 @@
     padding: 20px;
     height: auto;
     background-color: white;
+    cursor: pointer;
 }
 
 .date {
@@ -205,6 +208,7 @@
     text-align: left;
     font-size: 15px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #toppp_newzz h5 {
@@ -224,6 +228,7 @@ hr {
     color: rgb(157, 154, 154);
     background-color: white;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 #advertisement h4 {
@@ -240,6 +245,7 @@ hr {
     height: auto;
     background-color: white;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 #trending_div {
@@ -247,6 +253,7 @@ hr {
     height: auto;
     background-color: white;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 #videos_div {
@@ -254,6 +261,7 @@ hr {
     height: auto;
     background-color: white;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 /* ....................................................Photos-Div CSS.................................................. */
 #photos_div {
@@ -261,6 +269,7 @@ hr {
     height: auto;
     background-color: white;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 #detail_headline {
@@ -305,6 +314,7 @@ hr {
     height: auto;
     background-color: white;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 #category {
@@ -380,3 +390,31 @@ hr {
     background-color: rgb(217, 217, 217);
     height: none;
 }
+
+/* --------------------------------------------------------------------------------------- */
+
+.detailzz_div {
+    /* border: 1px solid red; */
+    margin: auto;
+    width: 95%;
+    padding: 20px;
+}
+
+.detailzz_div img {
+    width: 100%;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.detailzz_div iframe {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+
