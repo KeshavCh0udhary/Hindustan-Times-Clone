@@ -14,19 +14,23 @@ let displayData = (data) =>{
 
         let box = document.createElement("div")
         box.setAttribute("class","data-boxes")
-        box.innerText = "INDIA NEWS"
+        
+        let head = document.createElement("h4")
+        head.innerText = "INDIA NEWS"
+        head.style.color = "#00b1cd"
+
 
         let title = document.createElement("h5")
         title.innerText = el.title
 
         let image = document.createElement("img")
         image.src = el.urlToImage
-        image.setAttribute("class","data-img")
+        image.setAttribute("class","data-im")
 
         let publish = document.createElement("p")
         publish.innerText = el.publishedAt
 
-        box.append(title,image,publish)
+        box.append(head,title,image,publish)
         container.append(box)
 
 
