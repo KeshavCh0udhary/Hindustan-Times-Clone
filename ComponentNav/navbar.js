@@ -342,7 +342,7 @@ let Nav = () => {
 }
 document.getElementById("NaVbAr").innerHTML = Nav();
 
-let MiniNav= () => {
+let MiniNav = () => {
     return `<div id="ScrooL">
     <a href="">Home</a>
     <a href="">India</a>
@@ -359,61 +359,61 @@ let MiniNav= () => {
 };
 
 
-document.getElementById("MiNi").innerHTML =MiniNav();
+document.getElementById("MiNi").innerHTML = MiniNav();
 
 
-let Side=()=>{
+let Side = () => {
     let changesub = localStorage.getItem("done") || null;
-    document.querySelector("#sub a").addEventListener("click", ()=>{
+    document.querySelector("#sub a").addEventListener("click", () => {
         subscribe();
     })
-    let subscribe=()=> {
+    let subscribe = () => {
         window.location.href = "./index.html"
     }
-    
+
     if (changesub !== null) {
         document.querySelector("#btnsub").innerText = "Subscribed";
         document.querySelector("#trialdays").innerText = "";
-    
+
     }
     else {
         document.querySelector("#btnsub").innerText = "Subscribe";
     }
-    
+
     //login
-    
+
     let userData = localStorage.getItem("userName") || null;
-    
+
     if (userData !== null) {
         document.querySelector("#signuser").innerText = userData;
     }
-    
+
     else {
         document.querySelector("#signuser").innerText = "Sign in";
     }
-    
-    
+
+
     //log out 
-    document.querySelector("#out").addEventListener("click", ()=>{
+    document.querySelector("#out").addEventListener("click", () => {
         out();
     })
-    let  out=()=> {
+    let out = () => {
         localStorage.clear(changesub);
         window.location.reload();
     }
     //for e-paper
-    
-    
-    document.querySelector("#papere").addEventListener("click", ()=>{
+
+
+    document.querySelector("#papere").addEventListener("click", () => {
         gotoPaper();
     });
     //    console.log(changesub);
-    let gotoPaper=()=> {
+    let gotoPaper = () => {
         let changepaper = localStorage.getItem("all done") || null;
         console.log(changepaper);
         if (changepaper !== null) {
             window.location.href = "epaper.html";
-    
+
         }
         else {
             localStorage.removeItem("all done");
@@ -423,18 +423,61 @@ let Side=()=>{
     document.getElementById("Open").addEventListener("click", () => {
         openNav();
     });
-    let openNav=()=> {
+    let openNav = () => {
         document.getElementById("mySidenav").style.width = "350px";
         // document.getElementById("body").setAttribute("class", "BoDy");
     }
     document.getElementById("Close").addEventListener("click", () => {
         closeNav();
     });
-    let closeNav=()=> {
+    let closeNav = () => {
         document.getElementById("mySidenav").style.width = "0";
     }
-    
+
 }
 Side();
 
-export {Nav,Side,MiniNav};
+//406.15K − 273.15 = 133°C
+
+
+let TeMp=document.querySelector("body").addEventListener("load", () => {
+    Temp();
+});
+
+let Temp = () => {
+    function getLocation() {
+        navigator.geolocation.getCurrentPosition(success);
+        function success(pos) {
+            const crd = pos.coords;
+            console.log(crd);
+            getWeatherOnLocation(crd.latitude, crd.longitude)
+        }
+    }
+    getLocation();
+
+    function getWeatherOnLocation(lat, lon) {
+        let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=42cf2aab6493fb1430729423da17b1ec`
+        fetch(url).then(function (res) {
+            return res.json();
+        })
+            .then(function (res) {
+                // console.log(res);
+                append(res)
+            }).catch(function (err) {
+                console.log(err)
+            })
+    }
+
+    function append(data) {
+        console.log(data);
+        let url = `https://maps.google.com/maps?q=${data.name}&t=&z=13&ie=UTF8&iwloc=&output=embed`;
+        let x = data.main.temp;
+        x = (x - 273.15);
+        x = x.toFixed(0)
+        //console.log(x)
+    }
+}
+
+
+
+export { Nav, Side, MiniNav ,Temp};

@@ -31,33 +31,30 @@ cursor: pointer;
   align-items: center;
 }
 
-#Container>:nth-child(1) {
+#first {
   width: 85%;
   height: 45px;
   border: 1px solid rgb(186, 181, 181);
   margin: auto;
   margin-top: 8%;
   display: flex;
-  /* width: 1fr; */
   align-items: center;
   justify-content: center;
   color: grey;
   font-size: 12px;
-
 }
 
-#Container>:nth-child(1)>div {
+#first>div {
   width: 5%;
-  /* border: 1px solid red; */
   margin-right: 10px;
 }
 
-#Container>:nth-child(1)>div img {
+#first>div img {
   width: 100%;
 
 }
 
-#Container>:nth-child(2) {
+#second {
   width: 85%;
   height: 45px;
   margin: auto;
@@ -70,6 +67,7 @@ cursor: pointer;
   font-size: 13px;
   border-radius: 3px;
 }
+
 
 #logo {
   width: 20px;
@@ -87,7 +85,7 @@ cursor: pointer;
   margin-bottom: -50%;
 }
 
-#Container>:nth-child(3) {
+#third {
   width: 85%;
   display: flex;
   justify-content: space-between;
@@ -109,8 +107,9 @@ cursor: pointer;
   font-size: 16px;
 }
 
-#Container>:nth-child(5) {
+input {
   width: 85%;
+  margin: auto;
   height: 45px;
   margin-top: -2%;
   display: flex;
@@ -120,9 +119,9 @@ cursor: pointer;
   border-radius: 5px;
 }
 
-#Container>:nth-child(5)[type=text] {
+#Container input[type=text] {
   padding: 12px 20px;
-  margin: auto;
+  /* margin: auto; */
   box-sizing: border-box;
   font-size: medium;
   font-weight: bold;
@@ -131,17 +130,16 @@ cursor: pointer;
   outline: none;
 }
 
-#Container>:nth-child(5)[type=text]:focus {
+input[type=text]:focus {
   border: 1px solid rgb(3, 204, 219);
 }
 
-#Container>:nth-child(6) {
+#button {
   width: 150px;
   border-radius: 22px;
   padding: 15px 45px;
   margin: auto;
   margin-top: 10%;
-  /* margin-left: 35%; */
   font-size: 17px;
   font-weight: 500;
   color: white;
@@ -149,35 +147,35 @@ cursor: pointer;
   border: 1px solid transparent;
 }
 
-#Container>:nth-child(6):hover {
+#button:hover {
   cursor: pointer;
   background-color: rgb(196, 196, 196);
 }
 
-#Container>:nth-child(7) {
+#sixth {
   text-align: center;
   margin-top: 20%;
   font-size: 14px;
 }
 
-#Container>:nth-child(8) {
+#seventh{
   width: 25%;
   margin: auto;
 }
 
-#Container>:nth-child(8) img {
+#seventh img {
   width: 100%;
   margin-top: -4%;
 }
 
-#Container>:nth-child(9) {
+#eighth {
   text-align: center;
   font-size: 15px;
   margin-top: 1%;
   font-weight: 500;
 }
 
-#Container>:nth-child(10) {
+#ninth {
   width: 55%;
   margin: auto;
   height: 50px;
@@ -185,7 +183,7 @@ cursor: pointer;
   margin-top: -5px;
 }
 
-#Container>:nth-child(10) img {
+#ninth img {
   width: 100%;
 }
 
@@ -207,53 +205,4 @@ cursor: pointer;
   #navbar>img {
     width: 30%;
   }
-}
-
-/* .invalid-feedback,
-.empty-feedback {
-  display: none;
-}
-
-.was-validated :placeholder-shown:invalid~.empty-feedback {
-  display: block;
-}
-
-.was-validated :not(:placeholder-shown):invalid~.invalid-feedback {
-  display: block;
-}
-
-.is-invalid,
-.was-validated :invalid {
-  border-color: #dc3545;
-} */
-
-a.icap {
-  background: url(https://images.livemint.com/sso/appleid_iconlogo.png) no-repeat 138px center #000;
-  border-radius: 2px;
-  padding-left: 170px;
-  line-height: 44px;
-  display: block;
-  margin: 0 0 16px;
-  width: 100%;
-  height: 44px;
-  color: #fff !important;
-  font-size: 17px;
-  font-weight: 700;
-  text-decoration: none;
-  background-size: 21px 21px;
-}
-
-a.ictc {
-  background: url(https://images.livemint.com/dev/ico_tc.svg) no-repeat 138px center #0087FE;
-  border-radius: 2px;
-  padding-left: 170px;
-  line-height: 44px;
-  display: block;
-  margin: 0 0 16px;
-  width: 100%;
-  height: 44px;
-  color: #fff !important;
-  font-size: 17px;
-  font-weight: 700;
-  text-decoration: none;
 }

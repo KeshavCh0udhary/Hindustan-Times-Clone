@@ -6,12 +6,12 @@ let message = document.getElementById("message");
 message.innerText = `We have sent you a verification code to ${Value ? Value : "No Body"}`;
 
 
-let x=document.getElementById("body")
-x.onload= () => {
+let x = document.getElementById("body")
+x.onload = () => {
     load();
 };
 
-let load=()=>{
+let load = () => {
     setTimeout(() => {
         verify();
     }, 3000);
@@ -19,8 +19,13 @@ let load=()=>{
 
 let verify = () => {
     let me = document.getElementById("me");
-    me.innerText = generateOTP3(6);
-    console.log(me.innerText);
+    let x = generateOTP3(6);
+    x = x.split("");
+    let X = x.join("");
+    x = x.join(" ");
+    alert(`Your OTP is : ${X}`);
+    me.innerText = x
+    // console.log(me.innerText);
 }
 
 function generateOTP3(size) {
@@ -33,8 +38,19 @@ function generateOTP3(size) {
     return OTP;
 }
 
-let Verify=document.getElementById("OTPVerify");
+let Verify = document.getElementById("OTPVerify");
 
-Verify.addEventListener("click",()=>{
-window.location.href="password.html"
+Verify.addEventListener("click", () => {
+    window.location.href = "password.html"
 });
+document.getElementById("LoGoo").addEventListener("click", () => {
+    window.location.href = "../ComponentNav/Comp.html";
+});
+
+
+// document.querySelector("#submit").addEventListener("submit", Save);
+
+//  function Save(){
+//     event.preventDefault();
+//     console.log("Save called");
+// }
