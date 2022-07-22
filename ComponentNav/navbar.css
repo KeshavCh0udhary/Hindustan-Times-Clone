@@ -445,6 +445,7 @@ a {
 
 #MiNi {
     box-shadow: 0 3px 6px 0 rgb(29, 94, 104);
+    background-color: white;
 }
 
 #MiNi>div {
@@ -467,4 +468,10 @@ a {
 #MiNi>div a:hover {
     color: rgb(35, 207, 207);
     border-bottom: 2px solid rgb(35, 207, 207);
+}
+
+.NaVbAr{
+    position: sticky;
+    z-index: 2;
+    top: 0%;
 }

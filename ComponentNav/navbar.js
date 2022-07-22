@@ -345,6 +345,7 @@ document.getElementById("NaVbAr").innerHTML = Nav();
 let MiniNav = () => {
     return `<div id="ScrooL">
     <a href="">Home</a>
+    <a href="">Latest</a>
     <a href="">India</a>
     <a href="">World</a>
     <a href="">Cities</a>
