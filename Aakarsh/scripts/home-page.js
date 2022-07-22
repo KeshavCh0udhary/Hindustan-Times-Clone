@@ -21,6 +21,7 @@ let append_first_div_data = (data_first) => {
 
 		let first_data_div = document.createElement('div');
 		first_data_div.setAttribute('class', 'first_data_div');
+		first_data_div.innerHTML = '<hr>';
 
 		first_data_div.append(title, publish);
 		first_div_container.append(first_data_div);
@@ -118,6 +119,8 @@ let displayData_left = (data) => {
 	data.forEach((el) => {
 		let last_div_data = document.createElement('div');
 		last_div_data.setAttribute('class', 'last_div_data');
+
+		last_div_data.innerHTML = '<hr>';
 
 		let title2 = document.createElement('h5');
 		title2.innerText = el.title;
