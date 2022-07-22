@@ -19,10 +19,11 @@ h3{
 .secNev{
     border: 1px solid red;
     width: 90%;
-  margin: auto;
+  
   display: flex;
   padding: 20px;
-  margin: 10px;
+  
+  margin: auto;
 
 }
 li{
@@ -40,6 +41,7 @@ a{
     border:1px solid blue;
     border-radius: 20px;
     margin: 5px;
+    font-size: 11px;
     
     
     
@@ -127,8 +129,26 @@ a:hover{
     
     
 }
+.data-boxes1{
+    width: 100%;
+    padding: 25px;
+    margin: 10px;
+    margin: auto;
+    line-height: 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 10px;
+    padding: 25px;
+    
+    
+    
+}
 
 .data-img{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.data-img1{
     width: 100%;
     margin: auto;
     text-align: center;
@@ -138,20 +158,21 @@ a:hover{
     display: block;
     margin: auto;
     text-align: center;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: bolder;
 }
 .hd-tag span{
     font-family: "blacker_pro_displayheavy";
     color: #00b1cd;
-    font-size: 29px;
+    font-size: 20px;
+    
     line-height: 25px;
     padding: 0 2px;
     display: inline;
 
 }
 
-/*  -------------------------------first div data  */
+/*  -------------------------------first div data--------------------------------------------------  */
 
 
 .first_data_div{
@@ -160,9 +181,24 @@ a:hover{
     margin: 10px;
     margin: auto;
     line-height: 25px;
-    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
     margin-top: 10px;
     padding: 25px;
     
 
+}
+.last_div_data{
+    width: 100%;
+    padding: 25px;
+    margin: 10px;
+    margin: auto;
+    line-height: 25px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    margin-top: 10px;
+    padding: 25px;
+    
+
+}
+hr{
+    width: 100%;
 }
