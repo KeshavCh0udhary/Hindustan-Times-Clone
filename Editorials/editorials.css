@@ -358,3 +358,126 @@
     color: #737374;
     font-weight: bolder;
 }
+#left{
+    height: fit-content;
+}
+#right{
+    border :1px solid red;
+}
+.right{
+    /* border: 1px solid green; */
+    /* height: 100px; */
+}
+#RightTop{
+    border: 1px solid gold;
+}
+#RightMiddle{
+    border: 1px solid gold;
+    /* height: 200px; */
+}
+#Right2ndLast{
+    border: 1px solid gold;
+    /* height: 200px; */
+}
+#RightLast{
+    border: 1px solid gold;
+    /* height: 200px; */
+}
+.RightTop{
+    border: 1px solid blue;
+    /* height: 200px; */
+}
+
+#RightTop .middle h4{
+    font-weight: bolder;
+    line-height: 20px;
+    padding: 25px;
+    color: #4b4b4b;
+}
+#RightTop .middle img {
+   width: 140px;
+   height: 90px;
+   margin: auto;
+}
+#RightTop .middle  {
+   height: fit-content;
+ }
+ #RightTop .middle:first-child img {
+    width: 100%;
+    height: auto;
+ }
+ #RightTop .middle:first-child{
+    margin-top: 10px;
+ }
+ #RightTop .middle:first-child{
+   text-align: left;
+   font-weight: bolder;
+   font-size: 14px;
+   line-height: 23px;
+ }
+ #RightTop .middle:first-child h3{
+    margin-bottom: 10px;
+  }
+
+
+  #RightMiddle .middle h4{
+    font-weight: bolder;
+    line-height: 20px;
+    padding: 25px;
+    color: #4b4b4b;
+}
+#RightMiddle .middle img {
+   width: 140px;
+   height: 90px;
+   margin: auto;
+}
+#RightMiddle .middle  {
+   height: fit-content;
+ }
+ #RightMiddle .middle:first-child img {
+    width: 100%;
+    height: auto;
+ }
+ #RightMiddle .middle:first-child{
+    margin-top: 10px;
+ }
+ #RightMiddle .middle:first-child{
+   text-align: left;
+   font-weight: bolder;
+   font-size: 14px;
+   line-height: 23px;
+ }
+ #RightMiddle .middle:first-child h3{
+    margin-bottom: 10px;
+  }
+
+  #Right2ndLast .middle h4{
+    font-weight: bolder;
+    line-height: 20px;
+    padding: 25px;
+    color: #4b4b4b;
+}
+#Right2ndLast .middle img {
+   width: 140px;
+   height: 90px;
+   margin: auto;
+}
+#Right2ndLast .middle  {
+   height: fit-content;
+ }
+ #Right2ndLast .middle:first-child img {
+    width: 100%;
+    height: auto;
+ }
+ #Right2ndLast .middle:first-child{
+    margin-top: 10px;
+ }
+ #Right2ndLast .middle:first-child{
+   text-align: left;
+   font-weight: bolder;
+   font-size: 14px;
+   line-height: 23px;
+ }
+ #Right2ndLast .middle:first-child h3{
+    margin-bottom: 10px;
+  }
