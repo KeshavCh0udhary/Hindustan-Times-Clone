@@ -1,7 +1,8 @@
-import { MiniNav, Nav, Side, Temp } from "../ComponentNav/navbar.js";
+import { MiniNav, Nav, Side, Temp} from "../ComponentNav/navbar.js";
 document.getElementById("NaVbAr").innerHTML = Nav();
 Side();
 Temp();
+
 
 document.getElementById("MiNi").innerHTML = MiniNav();
 
@@ -372,4 +373,13 @@ let Append = () => {
     LeftInfo(Info,3);
 }
 Append();
+console.log(document.getElementById('date').innerHTML);
+// let Date=()=>{
+//     // document.getElementById('hdate').innerHTML=null;
+//     const event = new Date(Date.UTC(2022, 07, 23, 3, 0, 0));
+//     const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
+//     document.getElementById('date').innerHTML = event.toLocaleDateString(undefined, options);
+// }
+// Date();
+
 
