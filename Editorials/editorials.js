@@ -7,8 +7,10 @@ Temp();
 document.getElementById("MiNi").innerHTML = MiniNav();
 
 
-let url = `https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=42130d0c2d2d4a94a20b89b77f9ca3eb`
+// let url = `https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=42130d0c2d2d4a94a20b89b77f9ca3eb`
+let url = `https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=9d15a22c0fba4d3f97a2cacda9da1506`
 
+//  url= `https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=9d15a22c0fba4d3f97a2cacda9da1506`
 
 //https://newsapi.org/v2/top-headlines?country=in&apiKey=42130d0c2d2d4a94a20b89b77f9ca3eb
 let getData = async () => {
@@ -49,13 +51,35 @@ let displayLeft = async () => {
     div4.setAttribute("class", "middle");
     let X = await getData();
     X = X[0];
-    // console.log(X);
+    let Y=X.publishedAt;
+    Y = Y.split("-");
+    
+    let y = Y[2].split("");
+    //console.log(y);
+    y = y[0] + "" + y[1];
+    let Month = Y[1];
+    // console.log(y);
+    // console.log(x);
+    let Date = (Month) => {
+        let arr = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        for (let i = 0; i < arr.length; i++) {
+            if (i + 1 === +Month) {
+                Month = arr[i + 1];
+                return Month;
+            }
+        }
+    }
+    Month = Date(Month);
+
+   
+    // console.log(X.publishedAt);
     let h2 = document.createElement("h3");
     h2.innerText = X.title;
     let img = document.createElement("img");
     img.src = X.urlToImage;
     let p = document.createElement("p");
-    p.innerText = `Updated on ${X.publishedAt}`;
+    p.innerText = `Updated on ${y} ${Month}`;
+    //p.innerText = `Updated on ${X.publishedAt}`;
     let divv = document.createElement("div");
     divv.setAttribute("id", "icons");
     divv.innerHTML = `<div>
@@ -71,23 +95,32 @@ let displayLeft = async () => {
 
     Second1.append(div4);
 
+    
+    // <h4 class="heading-css"><span class="brackets">[</span>PHOTOS<span class="brackets">]</span></h4>
+}
+
+let Right=()=>{
     let Third = document.getElementById("right");
     let DIV = document.createElement("div");
     DIV.setAttribute("class", "right");
-    DIV.innerHTML = `<h3 class="heading-css"><span class="brackets">[</span>TRENDING PHOTOS<span class="brackets">]</span></h3>`
+    DIV.innerHTML = `<h3 class="heading-css"><span class="brackets">[</span>PHOTOS<span class="brackets">]</span></h3>
+    <div id="RightTop"></div>`
     let DIV1 = document.createElement("div");
     DIV1.setAttribute("class", "right");
-    DIV1.innerHTML = `<h3 class="heading-css"><span class="brackets">[</span>MOST POPULAR<span class="brackets">]</span></h3>`
+    DIV1.innerHTML = `<h3 class="heading-css"><span class="brackets">[</span>MOST POPULAR<span class="brackets">]</span></h3>
+    <div id="RightMiddle"></div>`
     let DIV2 = document.createElement("div");
     DIV2.setAttribute("class", "right");
-    DIV2.innerHTML = `<h3 class="heading-css"><span class="brackets">[</span>TRENDING<span class="brackets">]</span></h3>`
+    DIV2.innerHTML = `<h3 class="heading-css"><span class="brackets">[</span>TRENDING<span class="brackets">]</span></h3>
+    <div id="Right2ndLast"></div>`
     let DIV3 = document.createElement("div");
     DIV3.setAttribute("class", "right");
-    DIV3.innerHTML = `<h3 class="heading-css"><span class="brackets">[</span>TRENDING VIDEOS<span class="brackets">]</span></h3>`
-    let DIV4 = document.createElement("div");
+    DIV3.innerHTML = `<h3 class="heading-css"><span class="brackets">[</span>TRENDING VIDEOS<span class="brackets">]</span></h3>
+    <div id="RightLast"></div>`
+    //let DIV4 = document.createElement("div");
     Third.append(DIV, DIV1, DIV2, DIV3);
-    // <h4 class="heading-css"><span class="brackets">[</span>PHOTOS<span class="brackets">]</span></h4>
 }
+Right();
 
 
 let MidBig = async () => {
@@ -234,7 +267,13 @@ let details = (X) => {
 };
 
 let LeftInfo = async (Info,i) => {
-    url = `https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=42130d0c2d2d4a94a20b89b77f9ca3eb`
+    // url = `https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=42130d0c2d2d4a94a20b89b77f9ca3eb`
+   url = `https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=9d15a22c0fba4d3f97a2cacda9da1506`
+    //9d15a22c0fba4d3f97a2cacda9da1506;
+
+    //  url= `https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=9d15a22c0fba4d3f97a2cacda9da1506`
+
+    //https://newsapi.org/v2/top-headlines?country=in&apiKey=9d15a22c0fba4d3f97a2cacda9da1506
     let News = await getData();
     console.log(News);
     let div = document.createElement("div");
@@ -258,9 +297,9 @@ let LeftInfo = async (Info,i) => {
 
     x = x.split("-");
     let y = x[2].split("");
-    y = y[1] + "" + y[1];
+    y = y[0] + "" + y[1];
     let Month = x[1];
-    // console.log(y);
+     console.log(y);
     // console.log(x);
     let Date = (Month) => {
         let arr = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -296,7 +335,7 @@ let LeftInfo = async (Info,i) => {
     x = News[1].publishedAt;
     x = x.split("-");
     y = x[2].split("");
-    y = y[1] + "" + y[1];
+    y = y[0] + "" + y[1];
     Month = x[1];
     Month = Date(Month);
 
@@ -323,7 +362,7 @@ let LeftInfo = async (Info,i) => {
     x = News[2].publishedAt;
     x = x.split("-");
     y = x[2].split("");
-    y = y[1] + "" + y[1];
+    y = y[0] + "" + y[1];
     Month = x[1];
     Month = Date(Month);
 
@@ -350,7 +389,7 @@ let LeftInfo = async (Info,i) => {
     x = News[3].publishedAt;
     x = x.split("-");
     y = x[2].split("");
-    y = y[1] + "" + y[1];
+    y = y[0] + "" + y[1];
     Month = x[1];
     Month = Date(Month);
 
@@ -358,6 +397,7 @@ let LeftInfo = async (Info,i) => {
     pp3.innerText = `Published on ${y} ${Month}`;
 
     div3.append(h1, p3, pp3);
+    console.log(div3)
     Info.append(div, div1, div2, div3);
 }
 
@@ -371,9 +411,78 @@ let Append = () => {
     LeftInfo(Info,2);
     Info = document.getElementById("LATEST");
     LeftInfo(Info,3);
+    // Info = document.getElementById("");
 }
 Append();
-console.log(document.getElementById('date').innerHTML);
+
+let displayRightBig= async(RightTop,i)=>{
+    url=`https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=9d15a22c0fba4d3f97a2cacda9da1506`;
+let div4 = document.createElement("div");
+    div4.setAttribute("class", "middle");
+    let X = await getData();
+    X = X[i];
+    let h2 = document.createElement("h3");
+    h2.innerText = X.title;
+    let img = document.createElement("img");
+    img.src = X.urlToImage;
+    div4.append(h2, img);
+    RightTop.append(div4);
+}
+let Second2 = document.getElementById("RightTop");
+displayRightBig(Second2,20);
+let Second3 = document.getElementById("RightMiddle");
+displayRightBig(Second3,30);
+let Second4 = document.getElementById("Right2ndLast");
+displayRightBig(Second3,40);
+let Second5 = document.getElementById("RightLast");
+displayRightBig(Second5,50);
+let displayRightSmall= async()=>{
+       let X = await getData();
+       let Mid=(Second2,x,y)=>{
+        for(let i=x; i<y; i++){
+            let div4 = document.createElement("div");
+                div4.setAttribute("class", "middle");
+                let h2 = document.createElement("h4");
+                h2.innerText = X[i].title;
+                let img = document.createElement("img");
+                img.src = X[i].urlToImage;
+                let divImg = document.createElement("div");
+                divImg.append(img);
+                let DD = document.createElement("div");
+                DD.append(h2)
+                div4.append(DD, divImg);
+                div4.setAttribute("id", "Flex");
+                Second2.append(div4);
+           }
+       }
+       Mid(Second2,2,6);
+       Mid(Second3,16,20);
+       Mid(Second4,44,48);
+       Mid(Second5,77,81);
+        // X.forEach((el) => {
+        //     i++;
+        //     let div4 = document.createElement("div");
+        //     div4.setAttribute("class", "middle");
+        //     let h2 = document.createElement("h4");
+        //     h2.innerText = el.title;
+        //     let img = document.createElement("img");
+        //     img.src = el.urlToImage;
+        //     let divImg = document.createElement("div");
+        //     divImg.append(img);
+        //     let DD = document.createElement("div");
+        //     DD.append(h2)
+        //     div4.append(DD, divImg);
+        //     div4.setAttribute("id", "Flex");
+        //     // div4.addEventListener("click", () => {
+        //     //     details1(el, div4);
+        //     // });
+        //     Second2.append(div4);
+        //     //Second2.append(el.title)
+        // })
+}
+displayRightSmall();
+
+//console.log(document.getElementById('date').innerHTML);
 // let Date=()=>{
 //     // document.getElementById('hdate').innerHTML=null;
 //     const event = new Date(Date.UTC(2022, 07, 23, 3, 0, 0));
