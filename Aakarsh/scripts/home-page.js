@@ -165,7 +165,7 @@ function sports(el, box1) {
 	sport_desc.innerText = el.description;
 
 	let btn1 = document.createElement("button")
-	btn1.innerText = "X"
+	btn1.innerText = "Back"
 
 	btn1.addEventListener("click",()=>{
 		window.location.href = "home-page.html"
