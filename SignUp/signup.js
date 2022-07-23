@@ -60,7 +60,7 @@ document.getElementById("button").addEventListener("click", () => {
 // telInput.on("keyup change", reset);
 
 document.getElementById("LoGoo").addEventListener("click", () => {
-    window.location.href = "../ComponentNav/Comp.html";
+    window.location.href = "../home-page.html";
 })
 
 

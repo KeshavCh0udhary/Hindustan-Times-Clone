@@ -1,3 +1,10 @@
+import { MiniNav, Nav, Side, Temp } from "../../ComponentNav/navbar.js";
+document.getElementById("NaVbAr").innerHTML = Nav();
+Side();
+Temp();
+
+document.getElementById("MiNi").innerHTML = MiniNav();
+
 // api_kye=6f85ccbc79a94217a85abd703fd4e188
 // https://newsapi.org/docs/get-started#top-headlines
 
