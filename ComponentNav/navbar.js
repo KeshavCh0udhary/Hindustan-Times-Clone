@@ -9,7 +9,7 @@ let Nav = () => {
                 <sup>o</sup>
                 C
             </div>
-            <div class="date">Thursday, july 21, 2022</div>
+            <div class="date">Sunday, july 24, 2022</div>
         </div>
         <a href="javascript:void(0)" class="closebtn" id="Close">&times;</a>
     </div>
@@ -17,7 +17,7 @@ let Nav = () => {
         <div class="nav-sec">
             <ul>
                 <li class="active">
-                    <a href="../home-page.html">
+                    <a href="../index.html">
                         HOME
                     </a>
                 </li>
@@ -34,7 +34,7 @@ let Nav = () => {
                 </li>
                 <li class="collapse">
                     <div>
-                        <a href="../home-page.html">OPINION</a>
+                        <a href="../index.html">OPINION</a>
                         <span></span>
                     </div>
                 </li>
@@ -62,7 +62,7 @@ let Nav = () => {
                     </div>
                 </li>
                 <li class="active">
-                    <a href="../home-page.html">
+                    <a href="../index.html">
                         BUSINESS
                     </a>
                 </li>
@@ -96,13 +96,13 @@ let Nav = () => {
                 </li>
                 <li class="collapse">
                     <div>
-                        <a href="">EDUCATION</a>
+                        <a href="../astrology.html">EDUCATION</a>
                         <span></span>
                     </div>
                 </li>
                 <li class="collapse">
                     <div>
-                        <a href="">ASTROLOGY</a>
+                        <a href="astrology.html">ASTROLOGY</a>
                         <span></span>
                     </div>
                 </li>
@@ -112,7 +112,7 @@ let Nav = () => {
                     </a>
                 </li>
                 <li class="active">
-                    <a href="">
+                    <a href="astrology.html">
                         VIDEOS
                     </a>
                 </li>
@@ -123,7 +123,7 @@ let Nav = () => {
                 </li>
                 <li class="collapse">
                     <div>
-                        <a href="">SPORTS</a>
+                        <a href="../cricket.html">SPORTS</a>
                         <span></span>
                     </div>
                 </li>
@@ -134,7 +134,7 @@ let Nav = () => {
                 </li>
                 <li class="collapse">
                     <div>
-                        <a href="">GAMES</a>
+                        <a href="../cricket.html">GAMES</a>
                         <span></span>
                     </div>
                 </li>
@@ -144,7 +144,7 @@ let Nav = () => {
                     </a>
                 </li>
                 <li class="active">
-                    <a href="">
+                    <a href="../index.html">
                         MORE FROM HT
                     </a>
                 </li>
@@ -344,7 +344,7 @@ document.getElementById("NaVbAr").innerHTML = Nav();
 
 let MiniNav = () => {
     return `<div id="ScrooL">
-    <a href="home-page.html">Home</a>
+    <a href="index.html">Home</a>
     <a href="../latest.html">Latest</a>
     <a href="../India.html">India</a>
     <a href="../world.html">World</a>
@@ -353,7 +353,7 @@ let MiniNav = () => {
     <a href="../cricket.html">Cricket</a>
     <a href="">Lifestyle</a>
     <a href="../astrology.html">Astrology</a>
-    <a href="">Editorials</a>
+    <a href="../editorialss.html">Editorials</a>
     <a href="">For You</a>
     <a href="">Shop Now</a>
 </div>`
