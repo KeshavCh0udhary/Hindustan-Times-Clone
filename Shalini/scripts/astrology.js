@@ -8,7 +8,7 @@ Temp();
 document.getElementById("MiNi").innerHTML = MiniNav();
 
 // =============================================== Middle-Section News ========================================
-let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=63825965b33f4ca5ad1b5902cb8c8382`
+let url =`https://newsapi.org/v2/everything?q=astrology&from=2022-06-22&sortBy=publishedAt&apiKey=63825965b33f4ca5ad1b5902cb8c8382`
 
 let getData = async() => {
     let res = await fetch (url)
@@ -79,7 +79,7 @@ div.addEventListener("click", () =>{
       div1.setAttribute("class","news_div1");
   
           let heading =  document.createElement("h4");
-          heading.innerText = "INDIA NEWS";
+          heading.innerText = "HOROSCOPE";
   
           let titles =  document.createElement("h5");
           titles.innerText = ele.title;
@@ -193,7 +193,7 @@ function details(ele,div) {
 
 function btnclick() {
   
-        window.location.href = "./india.html";
+        window.location.href = "./astrology.html";
      
 
 }

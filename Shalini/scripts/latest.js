@@ -23,11 +23,56 @@ let appendData = (data) => {
 
  let container = document.getElementById("middle-section");
 
+ 
+ let div = document.createElement("div");
+ div.setAttribute("id","big_div");
+ div.addEventListener("click", () =>{
+ details(data[10],div)
+ })
+
+let titles =  document.createElement("h5");
+titles.innerText = data[10].title;
+
+let mix_div = document.createElement("div");
+mix_div.setAttribute("id","icons_div")
+
+let date =  document.createElement("p");
+date.innerText =  `Updated on ${data[0].publishedAt}`;
+date.style.color = "grey";
+
+let icons =  document.createElement("div");
+icons.setAttribute("id","icons")
+
+   let share =  document.createElement("i");
+   share.setAttribute("class","fa fa-share-alt")
+
+   let bookmark =  document.createElement("i");
+   bookmark.setAttribute("class","fa fa-bookmark-o")
+
+icons.append(share, bookmark);
+
+mix_div.append(date, icons)
+
+let div2 = document.createElement("div");
+div2.setAttribute("class","news_div2");
+
+let images =  document.createElement("img");
+images.src = data[10].urlToImage;
+
+div2.append(images);
+
+
+div.append(titles, div2, mix_div);
+
+container.append(div);
+
+
+
  data.forEach(function(ele){
 let div = document.createElement("div");
 div.setAttribute("class","news_div");
 div.addEventListener("click", () =>{
-   details(ele)
+   details(ele, div)
 })
     
       let div1 = document.createElement("div");
@@ -80,12 +125,15 @@ div.addEventListener("click", () =>{
 
 }
 
-function details(ele) {
+function details(ele, div) {
     console.log(ele)
-   let container = document.getElementById("middle-section");
-   container.innerHTML = null;
-    let div = document.createElement("div")
-    div.setAttribute("class","detailzz_div");
+//    let container = document.getElementById("middle-section");
+   div.style.height = "auto";
+   div.innerHTML = null;
+   div.setAttribute("class","detailzz_div");
+
+    let div_ = document.createElement("div")
+   
   
       let titlee = document.createElement("h3")
       titlee.innerText = ele.title;
@@ -99,9 +147,12 @@ function details(ele) {
       let mix_div = document.createElement("div");
             mix_div.setAttribute("id","icons_div")
   
-                  let date =  document.createElement("p");
-                  date.innerText = ele.publishedAt;
-    
+            let date =  document.createElement("p");
+            date.innerText = `Updated on ${ele.publishedAt}`;
+            date.setAttribute("id","datez")
+            date.style.color = "grey";
+            date.style.marginTop = "10px";
+
                   let icons =  document.createElement("div");
                   icons.setAttribute("id","icons")
                   
@@ -124,8 +175,15 @@ function details(ele) {
       let advertisements = document.createElement("div");
       advertisements.setAttribute("id", "new_data")
       advertisements.addEventListener("click",getData())
+
+      let btn = document.createElement("button");
+      btn.innerText = "Go Back";
+      btn.style.cursor = "pointer";
+      btn.addEventListener("click", () => {
+          window.location.href = "./latest.html";
+      });
    
-    div.append(titlee, imgz, desc, mix_div, link, content, advertisements)
-    container.append(div)
+    div_.append(titlee, imgz, desc, mix_div, link, content, advertisements, btn)
+    div.append(div_)
   
   }

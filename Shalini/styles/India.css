@@ -43,12 +43,65 @@
 
 .heading-css {
     font-weight: bolder;
+    /* border: 1px solid red; */
+    margin-top: 15px ;
 }
 
 .brackets {
     color: #00B1CD;
     font-weight: bold;
     font-size: larger;
+}
+
+#lineCss {
+    /* border: 1px solid red; */
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    
+}
+#lineCss hr {
+  opacity: 0.4;
+  margin-bottom: -2px;
+}
+
+.lines {
+    width: 35%;
+}
+
+.lineCs {
+    width: 37%;
+}
+
+.linesCssz {
+    width: 40%;
+}
+
+.linesz {
+    width: 31%;
+}
+
+.linessz {
+    width: 30%;
+}
+
+.lineszz {
+    width: 22%;
+}
+
+.lino {
+    width: 10%;
+}
+
+.linos {
+    width: 25%;
+}
+
+.linoz {
+    width: 17%;
 }
 
 /* --------------------------------------------------------------Middle section - CSS---------------------------------- */
@@ -70,8 +123,8 @@
     width: 90%;
     height: auto;
     text-align: left;
-   
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
 
 }
 
@@ -82,6 +135,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
 
 #middle-section .news_div:hover {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -381,11 +435,21 @@ hr {
     height: none;
 }
 
-
+/* ----------------------------------------Details Div-------------------------------- */
 .detailzz_div {
     margin: auto;
-    width: 95%;
+    margin-top: 10px;
+    width: 90%;
     padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid brown;
+
+}
+
+.detailzz_div:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .detailzz_div img {
@@ -401,3 +465,118 @@ hr {
     margin-top: 10px;
     border-radius: 5px;
 }
+
+.detailzz_div #datez {
+    color: grey;
+    margin-top: 10px;
+}
+
+/* ----------------------------------------------------Astrology Top Section CSS-------------------------------- */
+
+#horodiv {
+    width: auto;
+    /* border: 1px solid brown; */
+    margin: 5px;
+    margin-top: 15px;
+}
+
+#upperDiv {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 15px;
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+#upperDiv > div {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+}
+
+#upperDiv > div p {
+    color: grey;
+}
+
+#lowerDiv {
+    display: flex;
+    /* border: 1px solid greenyellow; */
+    justify-content: space-evenly;
+}
+
+#lowerDiv h3 {
+    margin-bottom: 7px;
+}
+
+#panchang {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    width: 47%;
+    height: 370px;
+    /* border: 1px solid brown; */
+   
+}
+
+#panchang .colorz {
+    height: 50px;
+    padding: 5px;
+    text-align: left;
+    background-color: rgb(29, 46, 124);
+    color: white;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-bottom: 10px;
+}
+
+
+#panchang hr{
+  opacity: 0.4;
+  margin: 15px 8px 15px 8px;
+}
+
+
+#calender {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    width: 47%;
+    height: 370px;
+    /* border: 1px solid brown; */
+    
+}
+
+#calender .colorzz {
+    height: 50px;
+    padding: 5px;
+    text-align: left;
+    background-color: rgb(137, 82, 146);
+    color: white;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    
+    
+}
+
+#calender h5 {
+    margin-top: 10px;
+}
+
+#detailss {
+    height: 250px;
+    overflow: scroll;
+    /* border:  1px solid greenyellow; */
+}
+
+#detailssss {
+    height: 250px;
+    /* border:  1px solid greenyellow; */
+    margin-top: 10px;
+}
+
+
+#panchang #detailss::-webkit-scrollbar {
+    display: none;
+ }  
+
+
+
+
