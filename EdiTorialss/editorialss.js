@@ -5,6 +5,9 @@ Temp();
 
 
 document.getElementById("MiNi").innerHTML = MiniNav();
+import{fotter,foot} from "../pankaj fotter/fotter.js";
+document.getElementById("fotter").innerHTML=fotter();
+foot();
 
 //8ce21546228440919b644eb19af543db
 

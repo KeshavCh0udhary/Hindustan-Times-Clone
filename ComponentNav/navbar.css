@@ -4,6 +4,11 @@
     text-decoration: none;
     font-family: "Lato", sans-serif;
 }
+body{
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-left: 0%;
+}
 
 #header {
     background-color: #011e29;

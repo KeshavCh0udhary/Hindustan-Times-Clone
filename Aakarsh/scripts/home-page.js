@@ -5,6 +5,10 @@ Temp();
 
 document.getElementById("MiNi").innerHTML = MiniNav();
 
+import{fotter,foot} from "../../pankaj fotter/fotter.js";
+document.getElementById("fotter").innerHTML=fotter();
+foot();
+
 //----------------------------------------------------------- First Page-----------------------------------------------------------------------
 let url_First = `https://newsapi.org/v2/top-headlines?country=in&apiKey=3040f5b972084c11b5135e4e11bb78ab`;
 
