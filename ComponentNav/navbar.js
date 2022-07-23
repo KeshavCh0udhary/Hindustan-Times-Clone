@@ -287,7 +287,7 @@ let Nav = () => {
 
             <div class="date-weather">
                 <div class="hDate">
-                    Thursday, May 05, 2022
+                <h4 id="date"> </h4>
                 </div>
 
 
@@ -478,6 +478,7 @@ let Temp = () => {
         //console.log(x)
     }
 }
+
 
 
 
