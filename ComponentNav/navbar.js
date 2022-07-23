@@ -350,9 +350,9 @@ let MiniNav = () => {
     <a href="../world.html">World</a>
     <a href="">Cities</a>
     <a href="../editorials.html">Entertainment</a>
-    <a href="">Cricket</a>
+    <a href="../cricket.html">Cricket</a>
     <a href="">Lifestyle</a>
-    <a href="">Astrology</a>
+    <a href="../astrology.html">Astrology</a>
     <a href="">Editorials</a>
     <a href="">For You</a>
     <a href="">Shop Now</a>
