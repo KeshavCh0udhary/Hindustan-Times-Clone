@@ -6,17 +6,11 @@ Temp();
 
 document.getElementById("MiNi").innerHTML = MiniNav();
 
-//8ce21546228440919b644eb19af543db
-
-//9d15a22c0fba4d3f97a2cacda9da1506
-
-//42130d0c2d2d4a94a20b89b77f9ca3eb
-
 
 // let url = `https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=42130d0c2d2d4a94a20b89b77f9ca3eb`
-let url = `https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=8ce21546228440919b644eb19af543db`
+let url = `https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=8ce21546228440919b644eb19af543db`
 
-//  url= `https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=9d15a22c0fba4d3f97a2cacda9da1506`
+//  url= `https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=8ce21546228440919b644eb19af543db`
 
 //https://newsapi.org/v2/top-headlines?country=in&apiKey=42130d0c2d2d4a94a20b89b77f9ca3eb
 let getData = async () => {
@@ -47,8 +41,8 @@ let displayLeft = async () => {
 
 
     let second = document.getElementById("middle");
-    second.innerHTML = `<h5 class="AllignLeft"><span class="brackets">Home</span> / Entertainment</h5>
-    <h2 class="heading-css"><span class="brackets">[</span>ENTERTAINMENT<span class="brackets">]</span></h2>
+    second.innerHTML = `<h5 class="AllignLeft"><span class="brackets">Home</span> / CRICKET</h5>
+    <h2 class="heading-css"><span class="brackets">[</span>CRICKET<span class="brackets">]</span></h2>
     <div id="BigDiv"></div>
     <div id="SmallDiv"></div>`;
 
@@ -230,7 +224,7 @@ let details1 = (X, div) => {
     P.innerText = X.content;
     let btn = document.createElement("button");
     btn.addEventListener("click", () => {
-        window.location.href = "./editorials.html";
+        window.location.href = "./cricket.html";
     });
     btn.innerText = "Go Back";
     div4.append(h2, pp, img, divv, P, btn);
@@ -265,7 +259,7 @@ let details = (X) => {
     P.innerText = X.content;
     let btn = document.createElement("button");
     btn.addEventListener("click", () => {
-        window.location.href = "./editorials.html";
+        window.location.href = "./cricket.html";
     });
     btn.innerText = "Go Back";
     div4.append(h2, pp, img, divv, P, btn);
@@ -274,12 +268,12 @@ let details = (X) => {
 
 let LeftInfo = async (Info, i) => {
     // url = `https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=42130d0c2d2d4a94a20b89b77f9ca3eb`
-    url = `https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=8ce21546228440919b644eb19af543db`
-    //9d15a22c0fba4d3f97a2cacda9da1506;
+    url = `https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=8ce21546228440919b644eb19af543db`
+    //8ce21546228440919b644eb19af543db;
 
-    //  url= `https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=9d15a22c0fba4d3f97a2cacda9da1506`
+    //  url= `https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=8ce21546228440919b644eb19af543db`
 
-    //https://newsapi.org/v2/top-headlines?country=in&apiKey=9d15a22c0fba4d3f97a2cacda9da1506
+    //https://newsapi.org/v2/top-headlines?country=in&apiKey=8ce21546228440919b644eb19af543db
     let News = await getData();
     console.log(News);
     let div = document.createElement("div");
@@ -422,7 +416,7 @@ let Append = () => {
 Append();
 
 let displayRightBig = async (RightTop, i) => {
-    url = `https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=8ce21546228440919b644eb19af543db`;
+    url = `https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=8ce21546228440919b644eb19af543db`;
     let div4 = document.createElement("div");
     div4.setAttribute("class", "middle");
     let X = await getData();
@@ -435,13 +429,13 @@ let displayRightBig = async (RightTop, i) => {
     RightTop.append(div4);
 }
 let Second2 = document.getElementById("RightTop");
-displayRightBig(Second2, 20);
+displayRightBig(Second2,18);
 let Second3 = document.getElementById("RightMiddle");
-displayRightBig(Second3, 30);
+displayRightBig(Second3, 12);
 let Second4 = document.getElementById("Right2ndLast");
-displayRightBig(Second3, 40);
+displayRightBig(Second3, 14);
 let Second5 = document.getElementById("RightLast");
-displayRightBig(Second5, 50);
+displayRightBig(Second5, 2);
 let displayRightSmall = async () => {
     let X = await getData();
     let Mid = (Second2, x, y) => {
@@ -461,10 +455,10 @@ let displayRightSmall = async () => {
             Second2.append(div4);
         }
     }
-    Mid(Second2, 2, 6);
-    Mid(Second3, 16, 20);
-    Mid(Second4, 44, 48);
-    Mid(Second5, 77, 81);
+    Mid(Second2, 0, 4);
+    Mid(Second3, 4, 8);
+    Mid(Second4, 8, 16);
+    Mid(Second5, 16, 20);
     // X.forEach((el) => {
     //     i++;
     //     let div4 = document.createElement("div");
