@@ -1,9 +1,9 @@
 import fotter from "./footer1.js"
 
-document.getElementById("fotter").innerHTML=fotter();
+//document.getElementById("fotter").innerHTML=fotter();
 
-
-let display=document.getElementById("top-bottom");
+let foot=()=>{
+    let display=document.getElementById("top-bottom");
 
     let a1=document.createElement("a");
     a1.setAttribute("class","bold");
@@ -560,3 +560,8 @@ let display=document.getElementById("top-bottom");
 
     display2.append(w1,w2,w3,w4,w5,w6,w7,w8,w9,w10,w11,w12,w13,w14);
     console.log(display2);
+}
+//foot();
+
+export {fotter,foot}
+

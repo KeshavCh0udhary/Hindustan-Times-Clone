@@ -3,7 +3,10 @@ document.getElementById("NaVbAr").innerHTML = Nav();
 Side();
 Temp();
 
-document.getElementById("MiNi").innerHTML = MiniNav();
+// document.getElementById("MiNi").innerHTML = MiniNav();
+// import{fotter,foot} from "../../pankaj fotter/fotter.js";
+// document.getElementById("fotter").innerHTML=fotter();
+// foot();
 
 // api_kye=6f85ccbc79a94217a85abd703fd4e188
 // https://newsapi.org/docs/get-started#top-headlines

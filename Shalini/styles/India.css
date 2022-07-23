@@ -8,7 +8,7 @@
 
 #news-box {
     padding: 0px 100px 0px 120px;
-    height: auto;
+    height: fit-content;
     display: flex;
     text-align: center;
     justify-content: space-evenly;
@@ -18,7 +18,7 @@
 #left-section {
     width: 18%;
     margin: 5px;
-    height: auto;
+    height: fit-content;
     background-color: rgb(240, 240, 240);
 }
 
@@ -26,14 +26,14 @@
     width: 40%;
     margin: 5px;
     padding: 5px;
-    height: auto;
+    height: fit-content;
     background-color: white;
 }
 
 #right-section {
     width: 27%;
     margin: 5px;
-    height: auto;
+    height: fit-content;
     background-color: rgb(240, 240, 240);
 }
 

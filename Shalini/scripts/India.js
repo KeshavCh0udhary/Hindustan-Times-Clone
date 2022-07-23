@@ -6,6 +6,9 @@ Side();
 Temp();
 
 document.getElementById("MiNi").innerHTML = MiniNav();
+import{fotter,foot} from "../../pankaj fotter/fotter.js";
+document.getElementById("fotter").innerHTML=fotter();
+foot();
 
 // =============================================== Middle-Section News ========================================
 let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=63825965b33f4ca5ad1b5902cb8c8382`

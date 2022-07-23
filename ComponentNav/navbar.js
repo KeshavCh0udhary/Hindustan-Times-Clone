@@ -260,7 +260,7 @@ let Nav = () => {
         </div>
         <div class="footerLogin logedIn">
             <div class="fSignOut">
-                <a href="">Sign in</a>
+                
             </div>
             <div class="shareArticle">
                 <div class="shareIcons">
@@ -315,16 +315,16 @@ let Nav = () => {
                 <div class="epaper">
                     <a href="../e-paper/e-paper.html" id="papere" style="cursor: pointer;">E-Paper</a>
                 </div>
-                <a href="../signup.html"
-                    style="text-decoration: none;color: white;margin-left: 5px;margin-top: 1px;">
-                    <h3 id="signuser">Sign in</h3>
-                </a>
+    
                 <div id="out" class="signin">
-                    <div class="login">
-                        <div class="sign-in">
-                            Sign-out
-                        </div>
-                    </div>
+                <a href="../signup.html">
+                <div class="login">
+                <div class="sign-in">
+                    Sign in
+                </div>
+                 </div>
+                </a>
+                   
                 </div>
             </div>
 
@@ -381,20 +381,6 @@ let Side = () => {
         document.querySelector("#btnsub").innerText = "Subscribe";
     }
 
-    //login
-
-    let userData = localStorage.getItem("userName") || null;
-
-    if (userData !== null) {
-        document.querySelector("#signuser").innerText = userData;
-    }
-
-    else {
-        document.querySelector("#signuser").innerText = "Sign in";
-    }
-
-
-    //log out 
     document.querySelector("#out").addEventListener("click", () => {
         out();
     })

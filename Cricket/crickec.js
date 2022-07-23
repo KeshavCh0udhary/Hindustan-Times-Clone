@@ -6,6 +6,10 @@ Temp();
 
 document.getElementById("MiNi").innerHTML = MiniNav();
 
+import{fotter,foot} from "../pankaj fotter/fotter.js";
+document.getElementById("fotter").innerHTML=fotter();
+foot();
+
 
 // let url = `https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=42130d0c2d2d4a94a20b89b77f9ca3eb`
 let url = `https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=8ce21546228440919b644eb19af543db`
