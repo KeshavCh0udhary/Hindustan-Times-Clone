@@ -1,3 +1,10 @@
+import { MiniNav, Nav, Side, Temp } from "../../ComponentNav/navbar.js";
+document.getElementById("NaVbAr").innerHTML = Nav();
+Side();
+Temp();
+
+document.getElementById("MiNi").innerHTML = MiniNav();
+
 // =============================================== Middle-Section News ========================================
 let url = `https://newsapi.org/v2/everything?q=latest&from=2022-06-22&sortBy=publishedAt&apiKey=63825965b33f4ca5ad1b5902cb8c8382`
 

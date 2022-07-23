@@ -100,5 +100,5 @@ let submit = () => {
 }
 
 document.getElementById("LoGoo").addEventListener("click", () => {
-    window.location.href = "../ComponentNav/Comp.html";
+    window.location.href = "../home-page.html";
 })

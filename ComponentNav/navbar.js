@@ -17,80 +17,80 @@ let Nav = () => {
         <div class="nav-sec">
             <ul>
                 <li class="active">
-                    <a href="">
+                    <a href="../home-page.html">
                         HOME
                     </a>
                 </li>
                 <li class="active">
-                    <a href="">
+                    <a href="../india.html">
                         INDIA NEWS
                     </a>
                 </li>
                 <li class="collapse">
                     <div>
-                        <a href="">WORLD NEWS</a>
+                        <a href="../world.html">WORLD NEWS</a>
                         <span></span>
                     </div>
                 </li>
                 <li class="collapse">
                     <div>
-                        <a href="">OPINION</a>
+                        <a href="../home-page.html">OPINION</a>
                         <span></span>
                     </div>
                 </li>
                 <li class="collapse">
                     <div>
-                        <a href="">WEB STORIES</a>
+                        <a href="../editorials.html">WEB STORIES</a>
                         <span></span>
                     </div>
                 </li>
                 <li class="collapse">
                     <div>
-                        <a href="">SCIENCE</a>
+                        <a href="../latest.html">SCIENCE</a>
                         <span></span>
                     </div>
                 </li>
                 <li class="active">
-                    <a href="">
+                    <a href="../latest.html">
                         TRENDING
                     </a>
                 </li>
                 <li class="collapse">
                     <div>
-                        <a href="">ANALYSIS</a>
+                        <a href="../editorials.html">ANALYSIS</a>
                         <span></span>
                     </div>
                 </li>
                 <li class="active">
-                    <a href="">
+                    <a href="../home-page.html">
                         BUSINESS
                     </a>
                 </li>
                 <li class="collapse">
                     <div>
-                        <a href="">PODCASTS</a>
+                        <a href="../latest.html">PODCASTS</a>
                         <span></span>
                     </div>
                 </li>
                 <li class="collapse">
                     <div>
-                        <a href="">ENTERTAINMENT</a>
+                        <a href="../editorials.html">ENTERTAINMENT</a>
                         <span></span>
                     </div>
                 </li>
                 <li class="active">
-                    <a href="">
+                    <a href="../cricket.html">
                         CRICKET
                     </a>
                 </li>
                 <li class="active">
-                    <a href="">
+                    <a href="../world.html">
                        CITIES
                     </a>
                 </li>
                 <li class="collapse">
                     <div>
-                        <a href="">LIFESTYLE</a>
+                        <a href="../editorials.html">LIFESTYLE</a>
                         <span></span>
                     </div>
                 </li>
@@ -344,7 +344,7 @@ document.getElementById("NaVbAr").innerHTML = Nav();
 
 let MiniNav = () => {
     return `<div id="ScrooL">
-    <a href="">Home</a>
+    <a href="home-page.html">Home</a>
     <a href="../latest.html">Latest</a>
     <a href="../India.html">India</a>
     <a href="../world.html">World</a>
