@@ -103,7 +103,7 @@ let displayData = (data) => {
 			btn.innerText = "Back"
 			btn.setAttribute("class","backbtn")
 			btn.addEventListener("click",function(){
-				window.location.href = "home-page.html"
+				window.location.href = "../index.html"
 			})
 
 			box.append(avatar, head,desc,btn)
@@ -172,7 +172,7 @@ function sports(el, box1) {
 	btn1.innerText = "Back"
 
 	btn1.addEventListener("click",()=>{
-		window.location.href = "home-page.html"
+		window.location.href = "../index.html"
 	})
 
 
