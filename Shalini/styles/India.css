@@ -413,7 +413,7 @@ hr {
     width: 100%;
 }
 
-button {
+#middle-section button {
     margin-top: 10px;
     padding: 2px;
     width: 50%;
@@ -422,6 +422,19 @@ button {
     background-color: #00B1CD;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
+}
+
+#product_div button {
+    margin-top: 10px;
+    padding: 2px;
+    width: 55%;
+    height: 30px;
+    color: white;
+    background-color: #00B1CD;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
 #explore {
@@ -444,7 +457,7 @@ hr {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 10px;
     cursor: pointer;
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
 
 }
 
@@ -492,6 +505,7 @@ hr {
 #upperDiv > div {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #upperDiv > div p {
@@ -513,10 +527,9 @@ hr {
     border-radius: 5px;
     width: 47%;
     height: 370px;
-    /* border: 1px solid brown; */
-   
+    cursor: pointer;
 }
-
+ 
 #panchang .colorz {
     height: 50px;
     padding: 5px;
@@ -540,8 +553,7 @@ hr {
     border-radius: 5px;
     width: 47%;
     height: 370px;
-    /* border: 1px solid brown; */
-    
+   
 }
 
 #calender .colorzz {
@@ -552,12 +564,13 @@ hr {
     color: white;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
-    
+    cursor: pointer;
     
 }
 
 #calender h5 {
     margin-top: 10px;
+    cursor: pointer;
 }
 
 #detailss {
@@ -575,6 +588,7 @@ hr {
 
 #panchang #detailss::-webkit-scrollbar {
     display: none;
+    
  }  
 
 

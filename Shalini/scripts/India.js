@@ -31,17 +31,17 @@ let appendData = (data) => {
       let div = document.createElement("div");
         div.setAttribute("id","big_div");
         div.addEventListener("click", () =>{
-        details(data[10],div)
+        details(data[15],div)
         })
 
 let titles =  document.createElement("h5");
-titles.innerText = data[10].title;
+titles.innerText = data[15].title;
 
 let mix_div = document.createElement("div");
 mix_div.setAttribute("id","icons_div")
 
       let date =  document.createElement("p");
-      date.innerText =  `Updated on ${data[0].publishedAt}`;
+      date.innerText =  `Updated on ${data[15].publishedAt}`;
       date.style.color = "grey";
 
       let icons =  document.createElement("div");
@@ -61,7 +61,7 @@ let div2 = document.createElement("div");
 div2.setAttribute("class","news_div2");
 
 let images =  document.createElement("img");
-images.src = data[10].urlToImage;
+images.src = data[15].urlToImage;
 
 div2.append(images);
 
