@@ -5,9 +5,9 @@ let fotter = ()=> {
             <img src="https://www.hindustantimes.com/res/images/ht-logo.svg" alt="">
             <img src="https://images.hindustantimes.com/images/app-images/2022/2/mweb_button_svg.svg">
         </div>
-        <h2>
+        <h6>
             Subscribe to our best newsletters
-        </h2>
+        </h6>
         <div id="top-mid" >
             <ul>
                 <li>
