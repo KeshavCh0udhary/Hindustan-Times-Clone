@@ -91,13 +91,17 @@ document.getElementById("navbar").innerHTML = navbar();
     }
 })();
 
-let submit = () => {
-    evevt.preventDefault();
-    let Submission = document.getElementById("submit");
-    Submission.addEventListener("submit", () => {
-        window.location.href = "../signup.html";
-    });
-}
+// let submit = () => {
+//     evevt.preventDefault();
+//     let Submission = document.getElementById("submit");
+//     Submission.addEventListener("submit", () => {
+//         window.location.href = "../signup.html";
+//     });
+// }
+let x= document.getElementById("submit").addEventListener("click", () => {
+    event.preventDefault();
+    window.location.href = "../index.html";
+});
 
 document.getElementById("LoGoo").addEventListener("click", () => {
     window.location.href = "../home-page.html";
