@@ -12,7 +12,7 @@ document.getElementById("fotter").innerHTML=fotter();
 foot();
 
 // =============================================== Middle-Section News ========================================
-let url =`https://newsapi.org/v2/everything?q=astrology&from=2022-06-22&sortBy=publishedAt&apiKey=63825965b33f4ca5ad1b5902cb8c8382`
+let url =`https://newsapi.org/v2/everything?q=astrology&from=2022-06-22&sortBy=publishedAt&apiKey=8ce21546228440919b644eb19af543db`
 
 let getData = async() => {
     let res = await fetch (url)
