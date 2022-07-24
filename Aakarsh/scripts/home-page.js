@@ -11,6 +11,7 @@ foot();
 
 //----------------------------------------------------------- First Page-----------------------------------------------------------------------
 let url_First = `https://newsapi.org/v2/top-headlines?country=in&apiKey=3040f5b972084c11b5135e4e11bb78ab`;
+// let url_First = `https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=294cb1f3aedc43baae9b2b653e9268d7`;
 
 let fetchData_first = async () => {
 	let res_first = await fetch(url_First);
@@ -43,6 +44,7 @@ let append_first_div_data = (data_first) => {
 
 let url =
 	'https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=3040f5b972084c11b5135e4e11bb78ab';
+	// 'https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=294cb1f3aedc43baae9b2b653e9268d7';
 let fetchData = async () => {
 	let res = await fetch(url);
 	let data = await res.json();
@@ -57,6 +59,10 @@ let displayData = (data) => {
 	data.forEach((el) => {
 		let box = document.createElement('div');
 		box.setAttribute('class', 'data-boxes');
+
+		box.addEventListener("click",()=>{
+			description(el,box)
+		})
 
 		let head = document.createElement('h3');
 		head.innerText = 'INDIA NEWS';
@@ -75,11 +81,45 @@ let displayData = (data) => {
 		container.append(box);
 	});
 };
+        function description(el,box){
+		
+		
+			box.innerHTML = null
+			box.style.margin = "auto"
 
+			let avatar = document.createElement("img")
+			avatar.src = el.urlToImage
+			avatar.setAttribute("class","midimg")
+
+			let head = document.createElement("p")
+			head.innerText = el.content
+
+			let desc = document.createElement("p")
+			desc.innerText = el.description
+			
+			// head.style.height = "100%"
+
+			let btn = document.createElement("button")
+			btn.innerText = "Back"
+			btn.setAttribute("class","backbtn")
+			btn.addEventListener("click",function(){
+				window.location.href = "home-page.html"
+			})
+
+			box.append(avatar, head,desc,btn)
+			// detail_div.append(box)
+			// container.append(detail_div)
+
+			
+		}
+		
+		
 let url1 = `https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=3040f5b972084c11b5135e4e11bb78ab`;
+// let url1 = `https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=294cb1f3aedc43baae9b2b653e9268d7`;
 let fetchData1 = async () => {
 	let res1 = await fetch(url1);
 	let data1 = await res1.json();
+	console.log("data1: ", data1);
 	// console.log(data1)
 	displayData1(data1.articles);
 };
@@ -91,6 +131,11 @@ let displayData1 = (data) => {
 	data.forEach((el) => {
 		let box1 = document.createElement('div');
 		box1.setAttribute('class', 'data-boxes1');
+
+		box1.addEventListener("click",()=>{
+			sports(el,box1)
+		})
+
 
 		let head1 = document.createElement('h3');
 		head1.innerText = 'Sports';
@@ -110,10 +155,41 @@ let displayData1 = (data) => {
 	});
 };
 
+function sports(el, box1) {
+	box1.innerHTML = null
+	let sport_avatar = document.createElement("img");
+	sport_avatar.src = el.urlToImage;
+	sport_avatar.setAttribute("class","sportimg")
+	
+
+	let sport_cont = document.createElement("p");
+	sport_cont.innerText = el.content;
+
+	let sport_desc = document.createElement("p");
+	sport_desc.innerText = el.description;
+
+	let btn1 = document.createElement("button")
+	btn1.innerText = "Back"
+
+	btn1.addEventListener("click",()=>{
+		window.location.href = "home-page.html"
+	})
+
+
+	box1.append(sport_avatar, sport_cont, sport_desc,btn1);
+
+
+
+
+}
+
+
+
 // ---------------------------------------------------------------Last Page------------------------------------------------------------------------
 
 let Url_Last_Div =
 	'https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=3040f5b972084c11b5135e4e11bb78ab';
+	// 'https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=294cb1f3aedc43baae9b2b653e9268d7';
 
 let Fetch_Last_Div = async () => {
 	let res = await fetch(Url_Last_Div);
