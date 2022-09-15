@@ -1,5 +1,5 @@
 
-![Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Hindustan_Times_logo.svg/690px-Hindustan_Times_logo.svg.png)
+![Logo](https://www.hindustantimes.com/res/images/ht-logo.svg)
 
 # Hindustan Times - Clone
 
