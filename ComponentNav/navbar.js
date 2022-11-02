@@ -28,7 +28,7 @@ let Nav = () => {
                 </li>
                 <li class="collapse">
                     <div>
-                        <a href="../world.html">WORLD NEWS</a>
+                        <a href="../india.html">WORLD NEWS</a>
                         <span></span>
                     </div>
                 </li>
@@ -319,7 +319,7 @@ let Nav = () => {
                 <div id="out" class="signin">
                 <a href="../signup.html">
                 <div class="login">
-                <div class="sign-in">
+                <div class="sign-in" id="sign">
                     Sign in
                 </div>
                  </div>
@@ -347,7 +347,7 @@ let MiniNav = () => {
     <a href="index.html">Home</a>
     <a href="../latest.html">Latest</a>
     <a href="../India.html">India</a>
-    <a href="../world.html">World</a>
+    <a href="../India.html">World</a>
     <a href="">Cities</a>
     <a href="../editorials.html">Entertainment</a>
     <a href="../cricket.html">Cricket</a>
