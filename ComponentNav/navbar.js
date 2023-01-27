@@ -40,7 +40,7 @@ let Nav = () => {
                 </li>
                 <li class="collapse">
                     <div>
-                        <a href="../editorials.html">WEB STORIES</a>
+                        <a href="../Editorials/index.html">WEB STORIES</a>
                         <span></span>
                     </div>
                 </li>
@@ -57,7 +57,7 @@ let Nav = () => {
                 </li>
                 <li class="collapse">
                     <div>
-                        <a href="../editorials.html">ANALYSIS</a>
+                        <a href="../Editorials/index.html">ANALYSIS</a>
                         <span></span>
                     </div>
                 </li>
@@ -74,7 +74,7 @@ let Nav = () => {
                 </li>
                 <li class="collapse">
                     <div>
-                        <a href="../editorials.html">ENTERTAINMENT</a>
+                        <a href="../Editorials/index.html">ENTERTAINMENT</a>
                         <span></span>
                     </div>
                 </li>
@@ -90,7 +90,7 @@ let Nav = () => {
                 </li>
                 <li class="collapse">
                     <div>
-                        <a href="../editorials.html">LIFESTYLE</a>
+                        <a href="../Editorials/index.html">LIFESTYLE</a>
                         <span></span>
                     </div>
                 </li>
@@ -349,7 +349,7 @@ let MiniNav = () => {
     <a href="../India.html">India</a>
     <a href="../India.html">World</a>
     <a href="">Cities</a>
-    <a href="../editorials.html">Entertainment</a>
+    <a href="../Editorials/index.html">Entertainment</a>
     <a href="../cricket.html">Cricket</a>
     <a href="">Lifestyle</a>
     <a href="../astrology.html">Astrology</a>
